@@ -1,0 +1,30 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: lightslategray;
+}
+
+.box{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: lightcoral;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px grey;
+    transform: translateX(500%);
+    transition: transform .4s ease;
+}
+
+.box:nth-of-type(even) {
+    transform: translateX(-500%);
+}
+
+.box.show{
+    transform: translateX(0);
+}
